@@ -1,0 +1,186 @@
+:root[theme-mode='dark'] {
+	--wd-brand-color-1: #1b2f51;
+	--wd-brand-color-2: #173463;
+	--wd-brand-color-3: #143975;
+	--wd-brand-color-4: #103d88;
+	--wd-brand-color-5: #0d429a;
+	--wd-brand-color-6: #054bbe;
+	--wd-brand-color-7: #2667d4;
+	--wd-brand-color-8: #4582e6;
+	--wd-brand-color-9: #699ef5;
+	--wd-brand-color-10: #96bbf8;
+	--wd-warning-color-1: #4f2a1d;
+	--wd-warning-color-2: #582f21;
+	--wd-warning-color-3: #733c23;
+	--wd-warning-color-4: #a75d2b;
+	--wd-warning-color-5: #cf6e2d;
+	--wd-warning-color-6: #dc7633;
+	--wd-warning-color-7: #e8935c;
+	--wd-warning-color-8: #ecbf91;
+	--wd-warning-color-9: #eed7bf;
+	--wd-warning-color-10: #f3e9dc;
+	--wd-error-color-1: #472324;
+	--wd-error-color-2: #5e2a2d;
+	--wd-error-color-3: #703439;
+	--wd-error-color-4: #83383e;
+	--wd-error-color-5: #a03f46;
+	--wd-error-color-6: #c64751;
+	--wd-error-color-7: #de6670;
+	--wd-error-color-8: #ec888e;
+	--wd-error-color-9: #edb1b6;
+	--wd-error-color-10: #eeced0;
+	--wd-success-color-1: #193a2a;
+	--wd-success-color-2: #1a4230;
+	--wd-success-color-3: #17533d;
+	--wd-success-color-4: #0d7a55;
+	--wd-success-color-5: #059465;
+	--wd-success-color-6: #43af8a;
+	--wd-success-color-7: #46bf96;
+	--wd-success-color-8: #80d2b6;
+	--wd-success-color-9: #b4e1d3;
+	--wd-success-color-10: #deede8;
+	--wd-gray-color-1: #f3f3f3;
+	--wd-gray-color-2: #eee;
+	--wd-gray-color-3: #e8e8e8;
+	--wd-gray-color-4: #ddd;
+	--wd-gray-color-5: #c6c6c6;
+	--wd-gray-color-6: #a6a6a6;
+	--wd-gray-color-7: #8b8b8b;
+	--wd-gray-color-8: #777;
+	--wd-gray-color-9: #5e5e5e;
+	--wd-gray-color-10: #4b4b4b;
+	--wd-gray-color-11: #393939;
+	--wd-gray-color-12: #2c2c2c;
+	--wd-gray-color-13: #242424;
+	--wd-gray-color-14: #181818;
+
+	// 文字 & 图标 颜色
+	--wd-font-white-1: rgba(255, 255, 255, 90%);
+	--wd-font-white-2: rgba(255, 255, 255, 55%);
+	--wd-font-white-3: rgba(255, 255, 255, 35%);
+	--wd-font-white-4: rgba(255, 255, 255, 22%);
+	--wd-font-gray-1: rgba(0, 0, 0, 90%);
+	--wd-font-gray-2: rgba(0, 0, 0, 60%);
+	--wd-font-gray-3: rgba(0, 0, 0, 40%);
+	--wd-font-gray-4: rgba(0, 0, 0, 26%);
+
+	// 基础颜色
+	--wd-brand-color: var(--wd-brand-color-8); // 色彩-品牌-可操作
+	--wd-warning-color: var(--wd-warning-color-5); // 色彩-功能-警告
+	--wd-error-color: var(--wd-error-color-6); // 色彩-功能-失败
+	--wd-success-color: var(--wd-success-color-5); // 色彩-功能-成功
+
+	// 基础颜色的扩展 用于 hover / 聚焦 / 禁用 / 点击 等状态
+	--wd-brand-color-hover: var(--wd-brand-color-7); // hover态
+	--wd-brand-color-focus: var(--wd-brand-color-2); // focus态，包括鼠标和键盘
+	--wd-brand-color-active: var(--wd-brand-color-9); // 点击态
+	--wd-brand-color-disabled: var(--wd-brand-color-3); // 禁用态
+	--wd-brand-color-light: var(--wd-brand-color-1); // 浅色的选中态
+	--wd-brand-color-light-hover: var(--wd-brand-color-2);
+
+	// 警告色扩展
+	--wd-warning-color-hover: var(--wd-warning-color-4);
+	--wd-warning-color-focus: var(--wd-warning-color-2);
+	--wd-warning-color-active: var(--wd-warning-color-6);
+	--wd-warning-color-disabled: var(--wd-warning-color-3);
+	--wd-warning-color-light: var(--wd-warning-color-1);
+	--wd-warning-color-light-hover: var(--wd-warning-color-2);
+
+	// 失败/错误色扩展
+	--wd-error-color-hover: var(--wd-error-color-5);
+	--wd-error-color-focus: var(--wd-error-color-2);
+	--wd-error-color-active: var(--wd-error-color-7);
+	--wd-error-color-disabled: var(--wd-error-color-3);
+	--wd-error-color-light: var(--wd-error-color-1);
+	--wd-error-color-light-hover: var(--wd-error-color-2);
+
+	// 成功色扩展
+	--wd-success-color-hover: var(--wd-success-color-4);
+	--wd-success-color-focus: var(--wd-success-color-2);
+	--wd-success-color-active: var(--wd-success-color-6);
+	--wd-success-color-disabled: var(--wd-success-color-3);
+	--wd-success-color-light: var(--wd-success-color-1);
+	--wd-success-color-light-hover: var(--wd-success-color-2);
+
+	// 遮罩
+	--wd-mask-active: rgba(0, 0, 0, 40%); // 遮罩-弹出
+	--wd-mask-disabled: rgba(0, 0, 0, 60%); // 遮罩-禁用
+
+	// 背景色
+	--wd-bg-color-page: var(--wd-gray-color-14); // 色彩 - page
+	--wd-bg-color-container: var(--wd-gray-color-13); // 色彩 - 容器
+	--wd-bg-color-container-hover: var(--wd-gray-color-12); // 色彩 - 容器 - hover
+	--wd-bg-color-container-active: var(
+		--wd-gray-color-10
+	); // 色彩 - 容器 - active
+	--wd-bg-color-container-select: var(
+		--wd-gray-color-9
+	); // 色彩 - 容器 - select
+	--wd-bg-color-secondarycontainer: var(--wd-gray-color-12); // 色彩 - 次级容器
+	--wd-bg-color-secondarycontainer-hover: var(
+		--wd-gray-color-11
+	); // 色彩 - 次级容器 - hover
+	--wd-bg-color-secondarycontainer-active: var(
+		--wd-gray-color-9
+	); // 色彩 - 次级容器 - active
+	--wd-bg-color-component: var(--wd-gray-color-11); // 色彩  - 组件
+	--wd-bg-color-component-hover: var(--wd-gray-color-10); // 色彩 - 组件 - hover
+	--wd-bg-color-component-active: var(
+		--wd-gray-color-9
+	); // 色彩 - 组件 - active
+	--wd-bg-color-secondarycomponent: var(--wd-gray-color-10); // 色彩 - 次级组件
+	--wd-bg-color-secondarycomponent-hover: var(
+		--wd-gray-color-9
+	); // 色彩 - 次级组件 - hover
+	--wd-bg-color-secondarycomponent-active: var(
+		--wd-gray-color-8
+	); // 色彩 - 次级组件 - active
+	--wd-bg-color-component-disabled: var(
+		--wd-gray-color-12
+	); // 色彩 - 组件 - disabled
+
+	// 特殊组件背景色，目前只用于 button、input 组件多主题场景，浅色主题下固定为白色，深色主题下为 transparent 适配背景颜色
+	--wd-bg-color-specialcomponent: transparent;
+
+	// 文本颜色
+	--wd-text-color-primary: var(--wd-font-white-1); // 色彩-文字-主要
+	--wd-text-color-secondary: var(--wd-font-white-2); // 色彩-文字-次要
+	--wd-text-color-placeholder: var(--wd-font-white-3); // 色彩-文字-占位符/说明
+	--wd-text-color-disabled: var(--wd-font-white-4); // 色彩-文字-禁用
+	--wd-text-color-anti: #fff; // 色彩-文字-反色
+	--wd-text-color-brand: var(--wd-brand-color-8); // 色彩-文字-品牌
+	--wd-text-color-link: var(--wd-brand-color-8); // 色彩-文字-链接
+
+	// 分割线
+	--wd-border-level-1-color: var(--wd-gray-color-11);
+	--wd-component-stroke: var(--wd-gray-color-11);
+	// 边框
+	--wd-border-level-2-color: var(--wd-gray-color-9);
+	--wd-component-border: var(--wd-gray-color-9);
+
+	// 基础/下层 投影 hover 使用的组件包括：表格 /
+	--wd-shadow-1: 0 4px 6px rgba(0, 0, 0, 6%), 0 1px 10px rgba(0, 0, 0, 8%),
+		0 2px 4px rgba(0, 0, 0, 12%);
+	// 中层投影 下拉 使用的组件包括：下拉菜单 / 气泡确认框 / 选择器 /
+	--wd-shadow-2: 0 8px 10px rgba(0, 0, 0, 12%), 0 3px 14px rgba(0, 0, 0, 10%),
+		0 5px 5px rgba(0, 0, 0, 16%);
+	// 上层投影（警示/弹窗）使用的组件包括：全局提示 / 消息通知
+	--wd-shadow-3: 0 16px 24px rgba(0, 0, 0, 14%), 0 6px 30px rgba(0, 0, 0, 12%),
+		0 8px 10px rgba(0, 0, 0, 20%);
+	// 内投影 用于弹窗类组件（气泡确认框 / 全局提示 / 消息通知）的内描边
+
+	--wd-shadow-inset-top: inset 0 0.5px 0 #5e5e5e;
+	--wd-shadow-inset-right: inset 0.5px 0 0 #5e5e5e;
+	--wd-shadow-inset-bottom: inset 0 -0.5px 0 #5e5e5e;
+	--wd-shadow-inset-left: inset -0.5px 0 0 #5e5e5e;
+
+	// table 特定阴影
+	--wd-table-shadow-color: rgba(0, 0, 0, 55%);
+
+	// 滚动条颜色
+	--wd-scrollbar-color: rgba(255, 255, 255, 10%);
+	// 滚动条悬浮颜色（ hover ）
+	--wd-scrollbar-hover-color: rgba(255, 255, 255, 30%);
+	// 滚动条轨道颜色，不能是带透明度，否则纵向滚动时，横向滚动条会穿透
+	--wd-scroll-track-color: #333;
+}
