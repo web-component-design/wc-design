@@ -11,6 +11,8 @@
 #.pnp.*
 .DS_Store
 
+/packages/example/docs/.vitepress/cache
+
 /node_modules
 /*/node_modules
 /*/*/node_modules

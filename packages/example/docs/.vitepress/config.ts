@@ -54,12 +54,13 @@ const sidebar: DefaultTheme.SidebarItem[] = [
 		}))
 	}))
 ];
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
 	vite: {
 		clearScreen: false
 	},
-	base: '/',
+	base: process.env.NODE_ENV === 'production' ? '/wc-design/' : '/',
 	lang: 'zh-CN',
 	cleanUrls: false,
 	title: 'wc-design',
