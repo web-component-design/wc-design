@@ -1,4 +1,5 @@
-const iconObj = {
+import { TIconName } from './types';
+export const iconTemplate = {
 	'add-circle'(currentColor: string) {
 		return `<svg width="1em" height="1em" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M7.5 8.5H4.5V7.5H7.5V4.5H8.5V7.5H11.5V8.5H8.5V11.5H7.5V8.5Z" fill="${currentColor}" fill-opacity="0.9"/>
@@ -1720,4 +1721,11 @@ const iconObj = {
 `;
 	}
 };
-export default iconObj;
+export default iconTemplate;
+
+export const showIconElement = (iconName: TIconName, currentColor: string) => {
+	if (iconTemplate[iconName]) {
+		return iconTemplate[iconName](currentColor);
+	}
+	return null;
+};

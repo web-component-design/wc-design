@@ -11,8 +11,10 @@ const comps = readdirSync(iconPath, { withFileTypes: true }).map(
 	})
 );
 
-let template = `const iconObj = {`;
+let template = `import { TIconName } from './types';
+export const iconTemplate = {`;
 let templateType = 'export type TIconName =';
+let iconArray = [];
 comps.forEach(({ name, filename }) => {
 	const sourceFile = readFileSync(`${iconPath}/${filename}`)
 		.toString()
@@ -21,16 +23,29 @@ comps.forEach(({ name, filename }) => {
 		.replace(/fill="black"/g, 'fill="${currentColor}"');
 	const coreTemp = 'return `' + sourceFile + '`';
 	template += `
-  ${name.includes('-') ? `"${name}"` : name}(currentColor: string) {
+  ${name.includes('-') ? `'${name}'` : name}(currentColor: string) {
     ${coreTemp};
   },`;
 	templateType += ` 
   | "${name}"`;
+	iconArray.push(name);
 });
 template += `
 };
-export default iconObj;
+export default iconTemplate;
+
+export const showIconElement = (iconName: TIconName, currentColor: string) => {
+	if (iconTemplate[iconName]) {
+		return iconTemplate[iconName](currentColor);
+	}
+	return null;
+};
 `;
 writeFileSync(resolve(iconPath, '..', 'constants.ts'), template);
 writeFileSync(resolve(iconPath, '..', 'types.d.ts'), templateType + ';');
+writeFileSync(
+	resolve(__dirname, '..', 'example/docs/components/icon/constants.ts'),
+	`export const iconArray = ${JSON.stringify(iconArray, 2, null)}`
+);
+
 console.log('icons 生成完成 ✅');
