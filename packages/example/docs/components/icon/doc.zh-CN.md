@@ -8,6 +8,8 @@
 
 - 你可以去定义它的颜色或者大小
 
+- 点击图标可以复制代码
+
 - 图标采用`svg`形式，如需添加图标，请[联系我们](https://github.com/web-component-design/wc-design/issues)
 
 ### 示例
