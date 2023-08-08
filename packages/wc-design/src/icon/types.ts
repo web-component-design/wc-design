@@ -1,3 +1,6 @@
+/**
+ * 图标类型
+ */
 export type TIconName =
 	| 'add-circle'
 	| 'add-rectangle'

@@ -1,5 +1,6 @@
 import DefaultTheme from 'vitepress/theme';
 // import './custom.css';
+import '../styles/palette.less';
 
 export default {
 	...DefaultTheme

@@ -76,7 +76,10 @@ export default defineConfig({
 			label: '目录'
 		},
 		socialLinks: [
-			{ icon: 'github', link: 'https://github.com/Tyf2345/wc-design' }
+			{
+				icon: 'github',
+				link: 'https://github.com/web-component-design/wc-design'
+			}
 		],
 		search: {
 			provider: 'local'
@@ -87,7 +90,7 @@ export default defineConfig({
 		editLink: {
 			text: '在github上编辑',
 			pattern:
-				'https://github.com/Tyf2345/wc-design/tree/main/packages/example/docs/:path'
+				'https://github.com/web-component-design/wc-design/tree/main/packages/example/docs/:path'
 		}
 	}
 });
