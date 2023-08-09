@@ -10,7 +10,6 @@ onMounted(() => {
 		content: 'message消息',
 		duration: 0,
 		zIndex: 10010,
-
 	});
 
 })

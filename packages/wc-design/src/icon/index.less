@@ -1,4 +1,5 @@
 @import '../../../theme-chalk/components/icon/_index.less';
+
 .wd-icons-view__wrapper {
 	width: calc(1 / 6 * 100%);
 	height: 100px;
@@ -11,17 +12,25 @@
 	border-radius: 6px;
 	position: relative;
 }
+
 .wd-icons-view__wrapper:hover {
-	background: var(--bg-color-demo-hover);
+	background: var(--wd-brand-color-1);
 }
-.wd-icons-view__wrapper:hover > .wd-icons-view__name {
+
+.wd-icon:hover {
+	transform: scale(1.3);
+}
+
+.wd-icons-view__wrapper:hover>.wd-icons-view__name {
 	opacity: 0;
 	visibility: hidden;
 }
-.wd-icons-view__wrapper:hover > .wd-icons-view__actions {
+
+.wd-icons-view__wrapper:hover>.wd-icons-view__actions {
 	opacity: 1;
 	visibility: visible;
 }
+
 .wd-icons-view__actions {
 	position: absolute;
 	bottom: 20px;
@@ -34,6 +43,7 @@
 	visibility: hidden;
 	transition: all 0.1s linear;
 }
+
 .wd-icons-view__actions-divider {
 	border-left: 1px solid var(--component-border);
 	border-top: 0;
@@ -54,6 +64,7 @@
 .wd-icons-view__actions span:hover {
 	color: var(--text-primary);
 }
+
 .wd-icon-wrap {
 	font-size: 16px;
 }

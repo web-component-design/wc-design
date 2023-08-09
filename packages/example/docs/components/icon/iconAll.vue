@@ -8,9 +8,12 @@
 <script lang="ts" setup>
 import 'wc-design/src/icon/index';
 import { iconArray } from './constants';
+import { message } from 'wc-design/src/message';
 const handleClick = (iconName: string) => {
 	navigator.clipboard.writeText(`<wc-icon iconName="${iconName}"/>`).then(res => {
-		console.log(res);
+		message.success({
+			content: '💖复制成功💖，快去使用吧',
+		});
 	}).catch(err => {
 		console.log(err);
 	})
