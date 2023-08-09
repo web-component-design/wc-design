@@ -19,6 +19,7 @@
 		"vitepress": "^1.0.0-beta.5"
 	},
 	"dependencies": {
+		"vue": "^3.3.4",
 		"wc-design": "workspace:^"
 	}
 }

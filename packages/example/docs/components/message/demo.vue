@@ -1,19 +1,19 @@
 <template>
-	<div>
-		<wc-message content="aad" @on-close-btn-click="handleClick" />
+	<div id="aac">
 	</div>
 </template>
 <script lang="ts" setup>
-import { mountMessage } from 'wc-design/src/message';
-// mountMessage({
-// 	content: 'message消息',
-// 	duration: 0,
-// 	theme: 'loading',
-// 	zIndex: 10010,
-// 	'on-close-btn-click': (e: MouseEvent) => {
-// 		console.log('eee', e);
-// 	}
-// });
+import { message } from 'wc-design/src/message';
+import { onMounted } from 'vue'
+onMounted(() => {
+	message.info({
+		content: 'message消息',
+		duration: 0,
+		zIndex: 10010,
+
+	});
+
+})
 
 // mountMessage({});
 // mountMessage({});

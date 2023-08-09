@@ -12,7 +12,7 @@ export interface TdMessageProps {
 	/**
 	 * 用于自定义消息弹出内容
 	 */
-	content?: string;
+	content?: string | HTMLElement;
 	/**
 	 * 消息内置计时器，计时到达时会触发 duration-end 事件。单位：毫秒。值为 0 则表示没有计时器。
 	 * @default 3000
