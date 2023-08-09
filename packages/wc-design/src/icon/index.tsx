@@ -15,34 +15,27 @@ export default class WcIcon extends QuarkElement {
 	size: TIconSize;
 
 	@property()
+	iconClassWrap = '';
+
+	@property()
 	color = 'black';
-	handleClick = (e: PointerEvent) => {
-		console.log(this.size);
+	handleClick = (e: MouseEvent) => {
 		this.$emit('onClick', e);
 	};
 
-	shouldComponentUpdate(propName, oldValue, newValue) {
-		console.log(propName, oldValue, newValue);
-
-		if (propName === 'xxx') {
-			// 阻止更新
-			return false;
-		}
-		return true;
-	}
-
 	render() {
-		const style = Number.isNaN(Number.parseInt(this.size))
+		const { iconClassWrap, size, iconName, color } = this;
+		const style = Number.isNaN(Number.parseInt(size))
 			? ''
-			: `font-size: ${this.size}`;
+			: `font-size: ${size}`;
 
 		return (
 			<div
-				onClick={(e: PointerEvent) => this.handleClick(e)}
+				onClick={(e: MouseEvent) => this.handleClick(e)}
 				dangerouslySetInnerHTML={{
-					__html: showIconElement(this.iconName, this.color)
+					__html: showIconElement(iconName, color)
 				}}
-				class={classNames('wd-icon', iconSizeTypeObject[this.size])}
+				class={classNames('wd-icon', iconSizeTypeObject[size], iconClassWrap)}
 				style={style}
 			></div>
 		);

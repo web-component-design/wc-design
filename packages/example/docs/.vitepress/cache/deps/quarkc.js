@@ -1,6 +1,6 @@
 import "./chunk-76J2PTFD.js";
 
-// ../../node_modules/.pnpm/registry.npmmirror.com+@babel+runtime@7.22.10/node_modules/@babel/runtime/helpers/esm/typeof.js
+// ../../node_modules/.pnpm/@babel+runtime@7.22.6/node_modules/@babel/runtime/helpers/esm/typeof.js
 function _typeof(obj) {
   "@babel/helpers - typeof";
   return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(obj2) {
@@ -10,7 +10,7 @@ function _typeof(obj) {
   }, _typeof(obj);
 }
 
-// ../../node_modules/.pnpm/registry.npmmirror.com+@babel+runtime@7.22.10/node_modules/@babel/runtime/helpers/esm/toPrimitive.js
+// ../../node_modules/.pnpm/@babel+runtime@7.22.6/node_modules/@babel/runtime/helpers/esm/toPrimitive.js
 function _toPrimitive(input, hint) {
   if (_typeof(input) !== "object" || input === null)
     return input;
@@ -24,13 +24,13 @@ function _toPrimitive(input, hint) {
   return (hint === "string" ? String : Number)(input);
 }
 
-// ../../node_modules/.pnpm/registry.npmmirror.com+@babel+runtime@7.22.10/node_modules/@babel/runtime/helpers/esm/toPropertyKey.js
+// ../../node_modules/.pnpm/@babel+runtime@7.22.6/node_modules/@babel/runtime/helpers/esm/toPropertyKey.js
 function _toPropertyKey(arg) {
   var key = _toPrimitive(arg, "string");
   return _typeof(key) === "symbol" ? key : String(key);
 }
 
-// ../../node_modules/.pnpm/registry.npmmirror.com+@babel+runtime@7.22.10/node_modules/@babel/runtime/helpers/esm/defineProperty.js
+// ../../node_modules/.pnpm/@babel+runtime@7.22.6/node_modules/@babel/runtime/helpers/esm/defineProperty.js
 function _defineProperty(obj, key, value) {
   key = _toPropertyKey(key);
   if (key in obj) {
@@ -46,7 +46,7 @@ function _defineProperty(obj, key, value) {
   return obj;
 }
 
-// ../../node_modules/.pnpm/registry.npmmirror.com+quarkc@1.0.39/node_modules/quarkc/lib/index.js
+// ../../node_modules/.pnpm/quarkc@1.0.39/node_modules/quarkc/lib/index.js
 var t = {};
 var n = [];
 var r = /acit|ex(?:s|g|n|p|$)|rph|grid|ows|mnc|ntw|ine[ch]|zoo|^ord|itera/i;
