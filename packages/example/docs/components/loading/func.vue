@@ -1,6 +1,6 @@
 <template>
 	<div class="delay">
-		<button @click="handleClick">点我函数调用</button>
+		<button @click="handleClick">点我函数调用,4秒后loading消失</button>
 	</div>
 </template>
 <script lang="ts" setup>
@@ -23,6 +23,7 @@ const handleClick = () => {
 	height: 100px;
 	align-items: center;
 }
+
 .mr-30 {
 	margin-right: 30px;
 }

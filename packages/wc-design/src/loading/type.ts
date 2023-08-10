@@ -1,11 +1,7 @@
 import { TSize } from 'shared/src/types';
 
 export interface LoadingOptions {
-	/**
-	 * 指定弹框挂载的父节点。数据类型为 String 时，会被当作选择器处理，进行节点查询。示例：'body'
-	 * @default 'body'
-	 */
-	attach?: string;
+
 
 	/** 延迟显示加载效果的时间，用于防止请求速度过快引起的加载闪烁，单位：毫秒 */
 	delay?: number;
