@@ -52,28 +52,28 @@ class WcMessage extends QuarkElement implements MessageOptions {
 				class="wd-icon"
 			/>
 		);
-
 	}
 
 	closeIconElement() {
-		const { closeBtn } = this
+		const { closeBtn } = this;
 
 		// 渲染图标
 		if (closeBtn === true) {
-			return <wc-icon
-				class="wd-icon"
-				iconName="close"
-				onClick={(e: MouseEvent) => {
-					this.$emit('close-btn-click', e);
-				}}
-			/>
+			return (
+				<wc-icon
+					class="wd-icon"
+					iconName="close"
+					onClick={(e: MouseEvent) => {
+						this.$emit('close-btn-click', e);
+					}}
+				/>
+			);
 		}
 		// 渲染文字
 		if (typeof closeBtn === 'string' && closeBtn.length > 0) {
 			return closeBtn;
 		}
-		return null
-
+		return null;
 	}
 	render() {
 		const { content, zIndex, closeBtn, theme } = this;
@@ -88,12 +88,14 @@ class WcMessage extends QuarkElement implements MessageOptions {
 			>
 				<div class={messageClassNameWrap} style="opacity: 1; margin-top: 0px;">
 					{this.prevIconElement()}
-					<div dangerouslySetInnerHTML={{
-						__html: content
-					}}></div>
+					<div
+						dangerouslySetInnerHTML={{
+							__html: content
+						}}
+					></div>
 					<span class="wd-message__close">{this.closeIconElement()}</span>
 				</div>
-			</div >
+			</div>
 		);
 	}
 }
@@ -118,11 +120,9 @@ export const message: Record<
 		timer = null;
 		// 移除dom
 		rootDom.removeChild(mountMessageElement);
-		mountMessageElement = null
-
+		mountMessageElement = null;
 	}
 };
-
 
 export const mountMessage = (opt: MessageOptions) => {
 	// 如果message 清理掉，重新生成
@@ -131,12 +131,12 @@ export const mountMessage = (opt: MessageOptions) => {
 	}
 
 	const { duration = 3000, attach } = opt;
-	mountMessageElement = document.createElement('wc-message') as unknown as HTMLElement &
-		MessageOptions;
+	mountMessageElement = document.createElement(
+		'wc-message'
+	) as unknown as HTMLElement & MessageOptions;
 
 	// 循环赋值到组件
 	for (const property in opt) {
-
 		mountMessageElement[property] = opt[property];
 	}
 
@@ -149,4 +149,3 @@ export const mountMessage = (opt: MessageOptions) => {
 	}
 	return mountMessageElement;
 };
-
