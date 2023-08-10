@@ -1,7 +1,7 @@
 import { QuarkElement, customElement, property } from 'quarkc';
 import style from './index.less';
-@customElement({ tag: 'wc-datePicker', style })
-export default class WcDatePicker extends QuarkElement {
+@customElement({ tag: 'wd-datePicker', style })
+export default class WdDatePicker extends QuarkElement {
 	@property()
 	title: string;
 	render() {

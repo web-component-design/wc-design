@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-backTop title="回到顶部" />
+		<wd-backTop title="回到顶部" />
 	</div>
 </template>
 <script lang="ts" setup>

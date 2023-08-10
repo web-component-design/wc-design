@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-cascader title="级联选择" />
+		<wd-cascader title="级联选择" />
 	</div>
 </template>
 <script lang="ts" setup>

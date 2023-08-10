@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-tree title="树" />
+		<wd-tree title="树" />
 	</div>
 </template>
 <script lang="ts" setup>

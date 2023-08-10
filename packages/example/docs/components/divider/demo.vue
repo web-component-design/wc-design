@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-divider title="分割线" />
+		<wd-divider title="分割线" />
 	</div>
 </template>
 <script lang="ts" setup>

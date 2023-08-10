@@ -1,7 +1,7 @@
 import { QuarkElement, customElement, property } from 'quarkc';
 import style from './index.less';
-@customElement({ tag: 'wc-upload', style })
-export default class WcUpload extends QuarkElement {
+@customElement({ tag: 'wd-upload', style })
+export default class WdUpload extends QuarkElement {
 	@property()
 	title: string;
 	render() {

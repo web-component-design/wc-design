@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-popconfirm title="气泡确认框" />
+		<wd-popconfirm title="气泡确认框" />
 	</div>
 </template>
 <script lang="ts" setup>

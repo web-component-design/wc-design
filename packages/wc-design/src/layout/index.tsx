@@ -1,7 +1,7 @@
 import { QuarkElement, customElement, property } from 'quarkc';
 import style from './index.less';
-@customElement({ tag: 'wc-layout', style })
-export default class WcLayout extends QuarkElement {
+@customElement({ tag: 'wd-layout', style })
+export default class WdLayout extends QuarkElement {
 	@property()
 	title: string;
 	render() {

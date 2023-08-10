@@ -1,7 +1,7 @@
 import { QuarkElement, customElement, property } from 'quarkc';
 import style from './index.less';
-@customElement({ tag: 'wc-affix', style })
-export default class WcAffix extends QuarkElement {
+@customElement({ tag: 'wd-affix', style })
+export default class WdAffix extends QuarkElement {
 	@property()
 	title: string;
 	render() {

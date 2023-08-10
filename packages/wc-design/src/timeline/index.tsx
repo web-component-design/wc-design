@@ -1,7 +1,7 @@
 import { QuarkElement, customElement, property } from 'quarkc';
 import style from './index.less';
-@customElement({ tag: 'wc-timeline', style })
-export default class WcTimeline extends QuarkElement {
+@customElement({ tag: 'wd-timeline', style })
+export default class WdTimeline extends QuarkElement {
 	@property()
 	title: string;
 	render() {

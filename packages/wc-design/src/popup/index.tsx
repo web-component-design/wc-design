@@ -1,7 +1,7 @@
 import { QuarkElement, customElement, property } from 'quarkc';
 import style from './index.less';
-@customElement({ tag: 'wc-popup', style })
-export default class WcPopup extends QuarkElement {
+@customElement({ tag: 'wd-popup', style })
+export default class WdPopup extends QuarkElement {
 	@property()
 	title: string;
 	render() {

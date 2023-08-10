@@ -1,7 +1,7 @@
 import { QuarkElement, customElement, property } from 'quarkc';
 import style from './index.less';
-@customElement({ tag: 'wc-backTop', style })
-export default class WcBackTop extends QuarkElement {
+@customElement({ tag: 'wd-backTop', style })
+export default class WdBackTop extends QuarkElement {
 	@property()
 	title: string;
 	render() {

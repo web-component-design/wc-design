@@ -1,7 +1,7 @@
 import { QuarkElement, customElement, property } from 'quarkc';
 import style from './index.less';
-@customElement({ tag: 'wc-swiper', style })
-export default class WcSwiper extends QuarkElement {
+@customElement({ tag: 'wd-swiper', style })
+export default class WdSwiper extends QuarkElement {
 	@property()
 	title: string;
 	render() {

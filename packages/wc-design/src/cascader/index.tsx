@@ -1,7 +1,7 @@
 import { QuarkElement, customElement, property } from 'quarkc';
 import style from './index.less';
-@customElement({ tag: 'wc-cascader', style })
-export default class WcCascader extends QuarkElement {
+@customElement({ tag: 'wd-cascader', style })
+export default class WdCascader extends QuarkElement {
 	@property()
 	title: string;
 	render() {

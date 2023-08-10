@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-treeSelect title="树选择" />
+		<wd-treeSelect title="树选择" />
 	</div>
 </template>
 <script lang="ts" setup>

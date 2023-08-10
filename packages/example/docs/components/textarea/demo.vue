@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-textarea title="多行文本框" />
+		<wd-textarea title="多行文本框" />
 	</div>
 </template>
 <script lang="ts" setup>

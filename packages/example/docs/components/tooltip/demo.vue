@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-tooltip title="文字提示" />
+		<wd-tooltip title="文字提示" />
 	</div>
 </template>
 <script lang="ts" setup>

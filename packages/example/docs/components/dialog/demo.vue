@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-dialog title="对话框" />
+		<wd-dialog title="对话框" />
 	</div>
 </template>
 <script lang="ts" setup>

@@ -1,7 +1,7 @@
 import { QuarkElement, customElement, property } from 'quarkc';
 import style from './index.less';
-@customElement({ tag: 'wc-calendar', style })
-export default class WcCalendar extends QuarkElement {
+@customElement({ tag: 'wd-calendar', style })
+export default class WdCalendar extends QuarkElement {
 	@property()
 	title: string;
 	render() {

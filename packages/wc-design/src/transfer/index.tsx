@@ -1,7 +1,7 @@
 import { QuarkElement, customElement, property } from 'quarkc';
 import style from './index.less';
-@customElement({ tag: 'wc-transfer', style })
-export default class WcTransfer extends QuarkElement {
+@customElement({ tag: 'wd-transfer', style })
+export default class WdTransfer extends QuarkElement {
 	@property()
 	title: string;
 	render() {

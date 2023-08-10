@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-selectInput title="筛选器输入框" />
+		<wd-selectInput title="筛选器输入框" />
 	</div>
 </template>
 <script lang="ts" setup>

@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-Avatar title="头像" />
+		<wd-Avatar title="头像" />
 	</div>
 </template>
 <script lang="ts" setup>

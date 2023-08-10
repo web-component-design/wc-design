@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-image title="图片" />
+		<wd-image title="图片" />
 	</div>
 </template>
 <script lang="ts" setup>

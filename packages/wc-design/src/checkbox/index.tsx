@@ -1,7 +1,7 @@
 import { QuarkElement, customElement, property } from 'quarkc';
 import style from './index.less';
-@customElement({ tag: 'wc-checkbox', style })
-export default class WcCheckbox extends QuarkElement {
+@customElement({ tag: 'wd-checkbox', style })
+export default class WdCheckbox extends QuarkElement {
 	@property()
 	title: string;
 	render() {

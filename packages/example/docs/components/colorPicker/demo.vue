@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-colorPicker title="颜色选择器" />
+		<wd-colorPicker title="颜色选择器" />
 	</div>
 </template>
 <script lang="ts" setup>

@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-grid title="删格" />
+		<wd-grid title="删格" />
 	</div>
 </template>
 <script lang="ts" setup>

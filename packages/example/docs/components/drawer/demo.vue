@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-drawer title="抽屉" />
+		<wd-drawer title="抽屉" />
 	</div>
 </template>
 <script lang="ts" setup>

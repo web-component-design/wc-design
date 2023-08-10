@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-form title="表单" />
+		<wd-form title="表单" />
 	</div>
 </template>
 <script lang="ts" setup>

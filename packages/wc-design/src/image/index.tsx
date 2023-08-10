@@ -1,7 +1,7 @@
 import { QuarkElement, customElement, property } from 'quarkc';
 import style from './index.less';
-@customElement({ tag: 'wc-image', style })
-export default class WcImage extends QuarkElement {
+@customElement({ tag: 'wd-image', style })
+export default class WdImage extends QuarkElement {
 	@property()
 	title: string;
 	render() {

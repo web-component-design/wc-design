@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-swiper title="轮播" />
+		<wd-swiper title="轮播" />
 	</div>
 </template>
 <script lang="ts" setup>

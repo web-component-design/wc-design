@@ -1,7 +1,7 @@
 import { QuarkElement, customElement, property } from 'quarkc';
 import style from './index.less';
-@customElement({ tag: 'wc-inputAdornment', style })
-export default class WcInputAdornment extends QuarkElement {
+@customElement({ tag: 'wd-inputAdornment', style })
+export default class WdInputAdornment extends QuarkElement {
 	@property()
 	title: string;
 	render() {

@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-switch title="开关" />
+		<wd-switch title="开关" />
 	</div>
 </template>
 <script lang="ts" setup>

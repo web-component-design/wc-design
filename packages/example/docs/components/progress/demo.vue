@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-progress title="加载" />
+		<wd-progress title="加载" />
 	</div>
 </template>
 <script lang="ts" setup>

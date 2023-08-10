@@ -3,8 +3,8 @@ import '../icon/index.tsx';
 import style from './index.less';
 import { MessageOptions, TMessageThemeList } from './type.js';
 import classNames from 'classnames';
-@customElement({ tag: 'wc-message', style })
-class WcMessage extends QuarkElement implements MessageOptions {
+@customElement({ tag: 'wd-message', style })
+class WdMessage extends QuarkElement implements MessageOptions {
 	@property()
 	theme?: TMessageThemeList = 'info';
 
@@ -44,7 +44,7 @@ class WcMessage extends QuarkElement implements MessageOptions {
 				break;
 		}
 		return (
-			<wc-icon
+			<wd-icon
 				iconName={iconName}
 				size="large"
 				color="currentColor"
@@ -60,7 +60,7 @@ class WcMessage extends QuarkElement implements MessageOptions {
 		// 渲染图标
 		if (closeBtn === true) {
 			return (
-				<wc-icon
+				<wd-icon
 					class="wd-icon"
 					iconName="close"
 					onClick={(e: MouseEvent) => {
@@ -132,7 +132,7 @@ export const mountMessage = (opt: MessageOptions) => {
 
 	const { duration = 3000, attach } = opt;
 	mountMessageElement = document.createElement(
-		'wc-message'
+		'wd-message'
 	) as unknown as HTMLElement & MessageOptions;
 
 	// 循环赋值到组件

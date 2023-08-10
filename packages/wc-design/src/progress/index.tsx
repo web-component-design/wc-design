@@ -1,7 +1,7 @@
 import { QuarkElement, customElement, property } from 'quarkc';
 import style from './index.less';
-@customElement({ tag: 'wc-progress', style })
-export default class WcProgress extends QuarkElement {
+@customElement({ tag: 'wd-progress', style })
+export default class WdProgress extends QuarkElement {
 	@property()
 	title: string;
 	render() {

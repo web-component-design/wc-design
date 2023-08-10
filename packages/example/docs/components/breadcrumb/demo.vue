@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-breadcrumb title="面包屑" />
+		<wd-breadcrumb title="面包屑" />
 	</div>
 </template>
 <script lang="ts" setup>

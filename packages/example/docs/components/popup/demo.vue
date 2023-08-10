@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-popup title="弹出层" />
+		<wd-popup title="弹出层" />
 	</div>
 </template>
 <script lang="ts" setup>

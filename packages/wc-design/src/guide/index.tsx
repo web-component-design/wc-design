@@ -1,7 +1,7 @@
 import { QuarkElement, customElement, property } from 'quarkc';
 import style from './index.less';
-@customElement({ tag: 'wc-guide', style })
-export default class WcGuide extends QuarkElement {
+@customElement({ tag: 'wd-guide', style })
+export default class WdGuide extends QuarkElement {
 	@property()
 	title: string;
 	render() {

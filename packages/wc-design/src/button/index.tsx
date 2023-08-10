@@ -1,7 +1,7 @@
 import { QuarkElement, customElement, property } from 'quarkc';
 import style from './index.less';
-@customElement({ tag: 'wc-button', style })
-export default class WcButton extends QuarkElement {
+@customElement({ tag: 'wd-button', style })
+export default class WdButton extends QuarkElement {
 	@property()
 	title: string;
 	render() {

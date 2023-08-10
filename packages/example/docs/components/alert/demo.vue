@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-alert title="警告" />
+		<wd-alert title="警告" />
 	</div>
 </template>
 <script lang="ts" setup>

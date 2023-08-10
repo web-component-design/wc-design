@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-link title="链接" />
+		<wd-link title="链接" />
 	</div>
 </template>
 <script lang="ts" setup>

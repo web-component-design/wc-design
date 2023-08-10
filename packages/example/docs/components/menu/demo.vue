@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-menu title="导航菜单" />
+		<wd-menu title="导航菜单" />
 	</div>
 </template>
 <script lang="ts" setup>

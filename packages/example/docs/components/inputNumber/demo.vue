@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-inputNumber title="数字输入框" />
+		<wd-inputNumber title="数字输入框" />
 	</div>
 </template>
 <script lang="ts" setup>

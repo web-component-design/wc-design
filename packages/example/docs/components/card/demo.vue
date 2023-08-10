@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-card title="卡片" />
+		<wd-card title="卡片" />
 	</div>
 </template>
 <script lang="ts" setup>

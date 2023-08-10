@@ -1,7 +1,7 @@
 import { QuarkElement, customElement, property } from 'quarkc';
 import style from './index.less';
-@customElement({ tag: 'wc-breadcrumb', style })
-export default class WcBreadcrumb extends QuarkElement {
+@customElement({ tag: 'wd-breadcrumb', style })
+export default class WdBreadcrumb extends QuarkElement {
 	@property()
 	title: string;
 	render() {

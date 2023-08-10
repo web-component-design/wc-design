@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-papination title="分页" />
+		<wd-papination title="分页" />
 	</div>
 </template>
 <script lang="ts" setup>

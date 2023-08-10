@@ -1,7 +1,7 @@
 import { QuarkElement, customElement, property } from 'quarkc';
 import style from './index.less';
-@customElement({ tag: 'wc-stickyTool', style })
-export default class WcStickyTool extends QuarkElement {
+@customElement({ tag: 'wd-stickyTool', style })
+export default class WdStickyTool extends QuarkElement {
 	@property()
 	title: string;
 	render() {

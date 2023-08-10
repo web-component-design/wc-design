@@ -1,7 +1,7 @@
 import { QuarkElement, customElement, property } from 'quarkc';
 import style from './index.less';
-@customElement({ tag: 'wc-anchor', style })
-export default class WcAnchor extends QuarkElement {
+@customElement({ tag: 'wd-anchor', style })
+export default class WdAnchor extends QuarkElement {
 	@property()
 	title: string;
 	render() {

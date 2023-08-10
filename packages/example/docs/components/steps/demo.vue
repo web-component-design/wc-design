@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-steps title="步骤条" />
+		<wd-steps title="步骤条" />
 	</div>
 </template>
 <script lang="ts" setup>

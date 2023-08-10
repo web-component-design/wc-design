@@ -1,18 +1,18 @@
 import { QuarkElement, customElement, property } from 'quarkc';
-import { TIconSize, iconSizeTypeObject } from 'shared/src/tupes';
+import { TSize, sizeTypeObject } from 'shared/src/types';
 import classNames from 'classnames';
 import style from './index.less';
 import { TIconName } from './types';
 import { showIconElement } from './constants';
-@customElement({ tag: 'wc-icon', style })
-export default class WcIcon extends QuarkElement {
+@customElement({ tag: 'wd-icon', style })
+export default class WdIcon extends QuarkElement {
 	@property({
 		attribute: 'icon-name'
 	})
 	iconName: TIconName;
 
 	@property()
-	size: TIconSize;
+	size: TSize;
 
 	@property()
 	iconClassWrap = '';
@@ -35,7 +35,7 @@ export default class WcIcon extends QuarkElement {
 				dangerouslySetInnerHTML={{
 					__html: showIconElement(iconName, color)
 				}}
-				class={classNames('wd-icon', iconSizeTypeObject[size], iconClassWrap)}
+				class={classNames('wd-icon', sizeTypeObject[size], iconClassWrap)}
 				style={style}
 			></div>
 		);

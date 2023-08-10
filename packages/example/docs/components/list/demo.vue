@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-list title="列表" />
+		<wd-list title="列表" />
 	</div>
 </template>
 <script lang="ts" setup>

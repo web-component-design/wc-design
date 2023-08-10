@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-skeleton title="骨架屏" />
+		<wd-skeleton title="骨架屏" />
 	</div>
 </template>
 <script lang="ts" setup>

@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-checkbox title="多选框" />
+		<wd-checkbox title="多选框" />
 	</div>
 </template>
 <script lang="ts" setup>

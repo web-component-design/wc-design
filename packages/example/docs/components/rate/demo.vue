@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-rate title="评分" />
+		<wd-rate title="评分" />
 	</div>
 </template>
 <script lang="ts" setup>

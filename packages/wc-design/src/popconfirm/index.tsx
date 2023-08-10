@@ -1,7 +1,7 @@
 import { QuarkElement, customElement, property } from 'quarkc';
 import style from './index.less';
-@customElement({ tag: 'wc-popconfirm', style })
-export default class WcPopconfirm extends QuarkElement {
+@customElement({ tag: 'wd-popconfirm', style })
+export default class WdPopconfirm extends QuarkElement {
 	@property()
 	title: string;
 	render() {

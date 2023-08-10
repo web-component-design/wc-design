@@ -1,7 +1,7 @@
 import { QuarkElement, customElement, property } from 'quarkc';
 import style from './index.less';
-@customElement({ tag: 'wc-rangeInput', style })
-export default class WcRangeInput extends QuarkElement {
+@customElement({ tag: 'wd-rangeInput', style })
+export default class WdRangeInput extends QuarkElement {
 	@property()
 	title: string;
 	render() {

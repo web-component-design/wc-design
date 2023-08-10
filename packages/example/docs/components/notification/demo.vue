@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-notification title="消息通知" />
+		<wd-notification title="消息通知" />
 	</div>
 </template>
 <script lang="ts" setup>

@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-comment title="评论" />
+		<wd-comment title="评论" />
 	</div>
 </template>
 <script lang="ts" setup>

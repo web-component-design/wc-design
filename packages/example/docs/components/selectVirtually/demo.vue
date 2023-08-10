@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-selectVirtually title="选择器-虚拟列表" />
+		<wd-selectVirtually title="选择器-虚拟列表" />
 	</div>
 </template>
 <script lang="ts" setup>

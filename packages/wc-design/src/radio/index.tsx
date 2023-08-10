@@ -1,7 +1,7 @@
 import { QuarkElement, customElement, property } from 'quarkc';
 import style from './index.less';
-@customElement({ tag: 'wc-radio', style })
-export default class WcRadio extends QuarkElement {
+@customElement({ tag: 'wd-radio', style })
+export default class WdRadio extends QuarkElement {
 	@property()
 	title: string;
 	render() {

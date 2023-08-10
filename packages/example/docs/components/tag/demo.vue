@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-tag title="标签" />
+		<wd-tag title="标签" />
 	</div>
 </template>
 <script lang="ts" setup>

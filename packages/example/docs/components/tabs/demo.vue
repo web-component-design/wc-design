@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-tabs title="选项卡" />
+		<wd-tabs title="选项卡" />
 	</div>
 </template>
 <script lang="ts" setup>

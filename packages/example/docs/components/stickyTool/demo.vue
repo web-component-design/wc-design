@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-stickyTool title="侧边栏" />
+		<wd-stickyTool title="侧边栏" />
 	</div>
 </template>
 <script lang="ts" setup>

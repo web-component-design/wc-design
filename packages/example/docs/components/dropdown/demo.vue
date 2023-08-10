@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-dropdown title="下拉菜单" />
+		<wd-dropdown title="下拉菜单" />
 	</div>
 </template>
 <script lang="ts" setup>

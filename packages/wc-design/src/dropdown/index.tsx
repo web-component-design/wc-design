@@ -1,7 +1,7 @@
 import { QuarkElement, customElement, property } from 'quarkc';
 import style from './index.less';
-@customElement({ tag: 'wc-dropdown', style })
-export default class WcDropdown extends QuarkElement {
+@customElement({ tag: 'wd-dropdown', style })
+export default class WdDropdown extends QuarkElement {
 	@property()
 	title: string;
 	render() {

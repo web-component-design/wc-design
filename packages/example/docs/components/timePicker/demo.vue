@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-timePicker title="时间选择器" />
+		<wd-timePicker title="时间选择器" />
 	</div>
 </template>
 <script lang="ts" setup>

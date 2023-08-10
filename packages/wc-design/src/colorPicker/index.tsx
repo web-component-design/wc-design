@@ -1,7 +1,7 @@
 import { QuarkElement, customElement, property } from 'quarkc';
 import style from './index.less';
-@customElement({ tag: 'wc-colorPicker', style })
-export default class WcColorPicker extends QuarkElement {
+@customElement({ tag: 'wd-colorPicker', style })
+export default class WdColorPicker extends QuarkElement {
 	@property()
 	title: string;
 	render() {

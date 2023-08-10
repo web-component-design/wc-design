@@ -1,7 +1,7 @@
 import { QuarkElement, customElement, property } from 'quarkc';
 import style from './index.less';
-@customElement({ tag: 'wc-space', style })
-export default class WcSpace extends QuarkElement {
+@customElement({ tag: 'wd-space', style })
+export default class WdSpace extends QuarkElement {
 	@property()
 	title: string;
 	render() {

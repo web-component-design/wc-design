@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-upload title="上传" />
+		<wd-upload title="上传" />
 	</div>
 </template>
 <script lang="ts" setup>

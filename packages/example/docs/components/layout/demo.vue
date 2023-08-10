@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-layout title="布局" />
+		<wd-layout title="布局" />
 	</div>
 </template>
 <script lang="ts" setup>

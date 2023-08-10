@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-transfer title="穿梭框" />
+		<wd-transfer title="穿梭框" />
 	</div>
 </template>
 <script lang="ts" setup>

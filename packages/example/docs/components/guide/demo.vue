@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-guide title="引导" />
+		<wd-guide title="引导" />
 	</div>
 </template>
 <script lang="ts" setup>

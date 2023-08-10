@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-imageViewer title="图片预览" />
+		<wd-imageViewer title="图片预览" />
 	</div>
 </template>
 <script lang="ts" setup>

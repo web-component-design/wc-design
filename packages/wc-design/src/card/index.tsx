@@ -1,7 +1,7 @@
 import { QuarkElement, customElement, property } from 'quarkc';
 import style from './index.less';
-@customElement({ tag: 'wc-card', style })
-export default class WcCard extends QuarkElement {
+@customElement({ tag: 'wd-card', style })
+export default class WdCard extends QuarkElement {
 	@property()
 	title: string;
 	render() {

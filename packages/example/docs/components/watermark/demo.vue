@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-watermark title="水印" />
+		<wd-watermark title="水印" />
 	</div>
 </template>
 <script lang="ts" setup>

@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-slider title="滑块" />
+		<wd-slider title="滑块" />
 	</div>
 </template>
 <script lang="ts" setup>

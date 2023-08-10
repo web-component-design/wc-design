@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-table title="表格" />
+		<wd-table title="表格" />
 	</div>
 </template>
 <script lang="ts" setup>

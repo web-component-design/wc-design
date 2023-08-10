@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-anchor title="锚点" />
+		<wd-anchor title="锚点" />
 	</div>
 </template>
 <script lang="ts" setup>

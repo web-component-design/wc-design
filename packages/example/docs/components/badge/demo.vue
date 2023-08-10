@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-badge title="徽标" />
+		<wd-badge title="徽标" />
 	</div>
 </template>
 <script lang="ts" setup>

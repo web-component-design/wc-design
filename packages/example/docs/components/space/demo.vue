@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-space title="间距" />
+		<wd-space title="间距" />
 	</div>
 </template>
 <script lang="ts" setup>

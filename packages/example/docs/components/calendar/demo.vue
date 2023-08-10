@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-calendar title="日历" />
+		<wd-calendar title="日历" />
 	</div>
 </template>
 <script lang="ts" setup>

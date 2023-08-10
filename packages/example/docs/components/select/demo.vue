@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-select title="选择器" />
+		<wd-select title="选择器" />
 	</div>
 </template>
 <script lang="ts" setup>

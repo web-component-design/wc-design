@@ -1,7 +1,7 @@
 import { QuarkElement, customElement, property } from 'quarkc';
 import style from './index.less';
-@customElement({ tag: 'wc-tooltip', style })
-export default class WcTooltip extends QuarkElement {
+@customElement({ tag: 'wd-tooltip', style })
+export default class WdTooltip extends QuarkElement {
 	@property()
 	title: string;
 	render() {

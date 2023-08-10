@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-affix title="固钉" />
+		<wd-affix title="固钉" />
 	</div>
 </template>
 <script lang="ts" setup>

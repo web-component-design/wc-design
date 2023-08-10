@@ -1,7 +1,7 @@
 import { QuarkElement, customElement, property } from 'quarkc';
 import style from './index.less';
-@customElement({ tag: 'wc-watermark', style })
-export default class WcWatermark extends QuarkElement {
+@customElement({ tag: 'wd-watermark', style })
+export default class WdWatermark extends QuarkElement {
 	@property()
 	title: string;
 	render() {
