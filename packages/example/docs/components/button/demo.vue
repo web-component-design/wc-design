@@ -1,7 +1,7 @@
 i
 <template>
 	<div>
-		<wc-button title="按钮" />
+		<wd-button title="按钮" />
 	</div>
 </template>
 <script lang="ts" setup>
