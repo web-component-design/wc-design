@@ -13,6 +13,10 @@ const nav: DefaultTheme.NavItem[] = [
 	{
 		text: '源码贡献',
 		link: '/contributing'
+	},
+	{
+		text: '开发进度',
+		link: '/base/progress'
 	}
 ];
 const sidebar: DefaultTheme.SidebarItem[] = [
@@ -35,6 +39,10 @@ const sidebar: DefaultTheme.SidebarItem[] = [
 			{
 				text: '源码贡献',
 				link: '/contributing'
+			},
+			{
+				text: '开发进度',
+				link: '/base/progress'
 			}
 		]
 	},
