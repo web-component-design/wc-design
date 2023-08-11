@@ -10,7 +10,7 @@ import 'wc-design/src/loading/index.tsx';
 .base {
 	display: flex;
 	width: 100%;
-	height: 150px;
+	min-height: 150px;
 	justify-content: center;
 	align-items: center;
 	// border: 1px solid blue;

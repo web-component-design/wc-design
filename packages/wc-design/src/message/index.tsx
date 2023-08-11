@@ -3,6 +3,7 @@ import '../icon/index.tsx';
 import style from './index.less';
 import { MessageOptions, TMessageThemeList } from './type.js';
 import classNames from 'classnames';
+import { humpToLine } from 'shared/src/transform.js';
 @customElement({ tag: 'wd-message', style })
 class WdMessage extends QuarkElement implements MessageOptions {
 	@property()
@@ -11,10 +12,15 @@ class WdMessage extends QuarkElement implements MessageOptions {
 	@property()
 	content?: string | HTMLElement;
 
-	@property()
+	@property({
+		type: Number,
+		attribute: 'z-index'
+	})
 	zIndex?: number = 1001;
 
-	@property()
+	@property({
+		attribute: 'close-btn'
+	})
 	closeBtn?: string | boolean;
 
 	prevIconElement() {
@@ -58,13 +64,13 @@ class WdMessage extends QuarkElement implements MessageOptions {
 		const { closeBtn } = this;
 
 		// 渲染图标
-		if (closeBtn === true) {
+		if (closeBtn === 'true') {
 			return (
 				<wd-icon
 					class="wd-icon"
 					iconName="close"
-					onClick={(e: MouseEvent) => {
-						this.$emit('close-btn-click', e);
+					onClick={() => {
+						message.clear();
 					}}
 				/>
 			);
@@ -79,7 +85,7 @@ class WdMessage extends QuarkElement implements MessageOptions {
 		const { content, zIndex, closeBtn, theme } = this;
 
 		const messageClassNameWrap = classNames('wd-message', `wd-is-${theme}`, {
-			'wd-is-closable': closeBtn
+			'wd-is-closable': closeBtn === 'true' ? true : false
 		});
 		return (
 			<div
@@ -137,7 +143,7 @@ export const mountMessage = (opt: MessageOptions) => {
 
 	// 循环赋值到组件
 	for (const property in opt) {
-		mountMessageElement[property] = opt[property];
+		mountMessageElement.setAttribute(humpToLine(property), opt[property]);
 	}
 
 	rootDom = attach ? document.querySelector(attach) : document.body;

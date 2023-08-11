@@ -22,11 +22,6 @@ export interface TdMessageProps {
 	 * @default info
 	 */
 	theme?: TMessageThemeList;
-
-	/**
-	 * 当关闭按钮存在时，用户点击关闭按钮触发
-	 */
-	onCloseBtnClick?: (context: MouseEvent) => void;
 }
 
 export interface MessageOptions extends TdMessageProps {
