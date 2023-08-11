@@ -1,8 +1,6 @@
 import { TSize } from 'shared/src/types';
 
-export interface LoadingOptions {
-
-
+export interface LoadingProps {
 	/** 延迟显示加载效果的时间，用于防止请求速度过快引起的加载闪烁，单位：毫秒 */
 	delay?: number;
 

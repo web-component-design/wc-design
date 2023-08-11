@@ -1,8 +1,4 @@
-const small = 'small';
-const medium = 'medium';
-const large = 'large';
-
-export const sizeTypeList = [small, medium, large] as const;
+export const sizeTypeList = ['small', 'medium', 'large'] as const;
 
 export const sizeTypeObject = {
 	small: 'wd-size-s',
@@ -11,6 +7,18 @@ export const sizeTypeObject = {
 	null: ''
 } as const;
 /**
- * 图标尺寸
+ * 尺寸大小
  */
-export type TSize = typeof small | typeof medium | typeof large;
+export type TSize = (typeof sizeTypeList)[number];
+
+export const themeList = [
+	'default',
+	'primary',
+	'danger',
+	'warning',
+	'success'
+] as const;
+
+export type TTheme = (typeof themeList)[number];
+
+export type TLabelTarget = '_self' | '_blank' | '_parent' | '_top';

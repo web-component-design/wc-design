@@ -1,3 +1,5 @@
+import { TSize } from 'shared/src/types';
+
 /**
  * 图标类型
  */
@@ -246,3 +248,31 @@ export type TIconName =
 	| 'wifi'
 	| 'zoom-in'
 	| 'zoom-out';
+
+export interface IconProps {
+	/**
+	 * 图标名称
+	 */
+	iconName?: TIconName;
+
+	/**
+	 * 图标大小 small | medium | large
+	 */
+	size?: TSize;
+
+	/**
+	 * 图标父节点div class 属性
+	 */
+	iconClassWrap?: string;
+
+	/**
+	 * 图标颜色
+	 */
+	color?: string;
+
+	/**
+	 * click事件
+	 * @param e MouseEvent
+	 */
+	click?: (e: MouseEvent) => void;
+}

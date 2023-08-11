@@ -2,10 +2,10 @@ import { QuarkElement, customElement, property } from 'quarkc';
 import { TSize, sizeTypeObject } from 'shared/src/types';
 import classNames from 'classnames';
 import style from './index.less';
-import { TIconName } from './types';
+import { IconProps, TIconName } from './types';
 import { showIconElement } from './constants';
 @customElement({ tag: 'wd-icon', style })
-export default class WdIcon extends QuarkElement {
+export default class WdIcon extends QuarkElement implements IconProps {
 	@property({
 		attribute: 'icon-name'
 	})
@@ -14,13 +14,16 @@ export default class WdIcon extends QuarkElement {
 	@property()
 	size: TSize;
 
-	@property()
+	@property({
+		attribute: 'icon-class-wrap'
+	})
 	iconClassWrap = '';
 
 	@property()
-	color = 'black';
+	color = 'currentColor';
+
 	handleClick = (e: MouseEvent) => {
-		this.$emit('onClick', e);
+		this.$emit('click', e);
 	};
 
 	render() {

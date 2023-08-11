@@ -1,5 +1,5 @@
 import { Fragment, QuarkElement, customElement, property, state } from 'quarkc';
-import { LoadingOptions } from './type';
+import { LoadingProps } from './type';
 import '../icon/index.tsx';
 import { TSize, sizeTypeList, sizeTypeObject } from 'shared/src/types';
 import { humpToLine } from 'shared/src/transform';
@@ -7,7 +7,7 @@ import style from './index.less';
 import classNames from 'classnames';
 
 @customElement({ tag: 'wd-loading', style })
-export default class WdLoading extends QuarkElement implements LoadingOptions {
+export default class WdLoading extends QuarkElement implements LoadingProps {
 	@property()
 	attach?: string;
 
@@ -171,7 +171,7 @@ export default class WdLoading extends QuarkElement implements LoadingOptions {
 	}
 }
 let mountLoadingElement: HTMLElement | null = null;
-const mountLoading = (opt: LoadingOptions) => {
+const mountLoading = (opt: LoadingProps) => {
 	loading.clear();
 	mountLoadingElement = document.createElement('wd-loading');
 	for (const property in opt) {
